@@ -1,6 +1,6 @@
 # Semantic Segmentation CNN (PyTorch)
 
-This repository contains a simple semantic segmentation project built from the ground up. It is designed to run on any personal computer with a modern NVIDIA GPU. Semantic segmentation is a computer vision task whose goal is to label every pixel in an image based on what it represents, such as animals, people, or objects. This model was specifically implemented, trained, and tested on the PASCAL VOC 2012 dataset, and while it can be used with other datasets, its performance outside of PASCAL VOC has not been tested. The model itself is a convolutional neural network and has two implementations that can be selected from: a default version and a similar version that also includes skip connections. In addition to the model, this project also implements a custom dataloader that processess the images for model use.
+This repository contains a simple semantic segmentation project built from the ground up. It is designed to run on any personal computer with a modern NVIDIA GPU. Semantic segmentation is a computer vision task whose goal is to label every pixel in an image based on what it represents, such as animals, people, or objects. This model was specifically implemented, trained, and tested on the PASCAL VOC 2012 dataset, and while it can be used with other datasets, its performance outside of PASCAL VOC has not been tested. The model itself is a encoder-decoder based convolutional neural network and has two implementations that can be selected from: a default version and a similar version that also includes skip connections. In addition to the model, this project also implements a custom dataloader that processess the images for model use.
 
 ## Repository Structure
 ```
@@ -38,7 +38,7 @@ segmentation_output/
 
 ## Notes
 - `semantic_model_type = 0` uses the baseline encoder–decoder model  
-- `semantic_model_type = 1` uses the skip-connection model  
+- `semantic_model_type = 1` uses the skip connection model  
 
 The skip-connection model is recommended, as it generally runs faster and produces better results.
 
