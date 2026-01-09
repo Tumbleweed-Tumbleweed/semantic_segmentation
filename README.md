@@ -20,10 +20,8 @@ Dataset
 Place the dataset in the following format at the repository root:
 
 PASCAL_Segmentation
-
   Images
     *.jpg
-    
   Annotations
     *.png
 
